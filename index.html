@@ -57,6 +57,7 @@
             </div>
             <div class="md:hidden">
               <button
+                id="mobile-menu-button"
                 class="text-slate-700 hover:text-slate-900 focus:text-slate-900 focus:outline-none"
               >
                 <svg
@@ -77,6 +78,34 @@
                 </svg>
               </button>
             </div>
+          </div>
+        </div>
+        <!-- Mobile menu -->
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden bg-white border-t border-gray-100"
+        >
+          <div class="px-4 pt-2 pb-3 space-y-1">
+            <a
+              href="#team"
+              class="block px-3 py-2 text-base font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md"
+              >Equipo</a
+            >
+            <a
+              href="#instalaciones"
+              class="block px-3 py-2 text-base font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md"
+              >Instalaciones</a
+            >
+            <a
+              href="#contact"
+              class="block px-3 py-2 text-base font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md"
+              >Contacto</a
+            >
+            <a
+              href="#contact"
+              class="block mt-4 px-4 py-2 text-center text-sm font-semibold text-white bg-gradient-to-r from-slate-800 to-slate-900 rounded-xl shadow-lg"
+              >Reservar Cita</a
+            >
           </div>
         </div>
       </nav>
@@ -171,7 +200,7 @@
             >
               <div class="aspect-w-1 aspect-h-1">
                 <img
-                  src="https://res.cloudinary.com/dvjb4do4c/image/upload/v1754727349/carmen_ryhepc.jpg"
+                  src="https://res.cloudinary.com/dvjb4do4c/image/upload/v1754732337/carmen_zdvgoi.jpg"
                   alt="Dra. Carmen Casado"
                   class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
@@ -302,7 +331,7 @@
               class="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl"
             >
               <img
-                src="https://res.cloudinary.com/dvjb4do4c/image/upload/v1754731149/P1211575_p8xxo8.jpg"
+                src="https://res.cloudinary.com/dvjb4do4c/image/upload/v1754732647/P1211574_lsdrk4.jpg"
                 alt="Equipo"
                 class="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -624,6 +653,32 @@
     </div>
     <script type="text/javascript">
       document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Mobile menu functionality
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", function () {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Close mobile menu when clicking on a link
+      const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+      mobileMenuLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", function (event) {
+        if (
+          !mobileMenuButton.contains(event.target) &&
+          !mobileMenu.contains(event.target)
+        ) {
+          mobileMenu.classList.add("hidden");
+        }
+      });
     </script>
   </body>
 </html>
