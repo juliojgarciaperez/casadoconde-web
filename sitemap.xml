@@ -3,6 +3,7 @@
   <url>
     <loc>https://casadocondedental.es/</loc>
     <lastmod>2026-03-16</lastmod>
+    <!-- Recuerda actualizar lastmod cada vez que modifiques el contenido -->
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>

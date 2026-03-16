@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <!-- Google tag (gtag.js) -->
@@ -19,6 +19,18 @@
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content="Astro v5.10.0" />
+    <link rel="alternate" hreflang="es" href="https://casadocondedental.es/" />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://casadocondedental.es/"
+    />
+    <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://www.googletagmanager.com"
+      crossorigin
+    />
     <title>Casado Conde | Clínica Dental en Huelva | Dentista en Huelva</title>
     <link rel="canonical" href="https://casadocondedental.es/" />
     <meta name="robots" content="index, follow" />
@@ -31,6 +43,8 @@
     />
     <meta name="geo.region" content="ES-H" />
     <meta name="geo.placename" content="Huelva" />
+    <meta name="geo.position" content="37.2630;-6.9529" />
+    <meta name="ICBM" content="37.2630, -6.9529" />
 
     <!-- Open Graph (para WhatsApp, Facebook, Telegram, etc.) -->
     <meta property="og:title" content="Clínica Dental Casado Conde" />
@@ -40,9 +54,14 @@
     />
     <meta
       property="og:image"
-      content="https://res.cloudinary.com/dvjb4do4c/image/upload/c_thumb,w_200,g_face/v1754731152/P1222138_ctrixw.jpg"
+      content="https://res.cloudinary.com/dvjb4do4c/image/upload/c_fill,w_1200,h_630,g_auto/v1754731152/P1222138_ctrixw.jpg"
     />
-    <meta property="og:image:alt" content="Clínica Dental Casado Conde" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Clínica Dental Casado Conde en Huelva"
+    />
     <meta property="og:url" content="https://casadocondedental.es/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Clínica Dental Casado Conde" />
@@ -50,67 +69,262 @@
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Clínica Dental Casado Conde | Dentista en Huelva" />
-    <meta name="twitter:description" content="Especialistas en implantología, ortodoncia, estética dental y cirugía oral en Huelva. Primera visita gratuita." />
-    <meta name="twitter:image" content="https://res.cloudinary.com/dvjb4do4c/image/upload/c_thumb,w_200,g_face/v1754731152/P1222138_ctrixw.jpg" />
+    <meta
+      name="twitter:title"
+      content="Clínica Dental Casado Conde | Dentista en Huelva"
+    />
+    <meta
+      name="twitter:description"
+      content="Especialistas en implantología, ortodoncia, estética dental y cirugía oral en Huelva. Primera visita gratuita."
+    />
+    <meta
+      name="twitter:image"
+      content="https://res.cloudinary.com/dvjb4do4c/image/upload/c_fill,w_1200,h_630,g_auto/v1754731152/P1222138_ctrixw.jpg"
+    />
 
     <!-- Datos estructurados -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Dentist",
-      "name": "Clínica Dental Casado Conde",
-      "url": "https://casadocondedental.es/",
-      "logo": "https://casadocondedental.es/favicon.svg",
-      "image": "https://res.cloudinary.com/dvjb4do4c/image/upload/c_thumb,w_200,g_face/v1754731152/P1222138_ctrixw.jpg",
-      "telephone": "+34629635875",
-      "email": "info@casadocondedental.es",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Paseo Independencia 41",
-        "addressLocality": "Huelva",
-        "postalCode": "21002",
-        "addressRegion": "Huelva",
-        "addressCountry": "ES"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 37.2614,
-        "longitude": -6.9447
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-          "opens": "09:30",
-          "closes": "13:30"
+      {
+        "@context": "https://schema.org",
+        "@type": "Dentist",
+        "name": "Clínica Dental Casado Conde",
+        "url": "https://casadocondedental.es/",
+        "logo": "https://casadocondedental.es/favicon.svg",
+        "image": "https://res.cloudinary.com/dvjb4do4c/image/upload/c_thumb,w_200,g_face/v1754731152/P1222138_ctrixw.jpg",
+        "telephone": "+34629635875",
+        "email": "info@casadocondedental.es",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Paseo Independencia 41",
+          "addressLocality": "Huelva",
+          "postalCode": "21002",
+          "addressRegion": "Huelva",
+          "addressCountry": "ES"
         },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-          "opens": "16:00",
-          "closes": "20:00"
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 37.2614,
+          "longitude": -6.9447
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:30",
+            "closes": "13:30"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "16:00",
+            "closes": "20:00"
+          }
+        ],
+        "sameAs": ["https://www.instagram.com/casadocondedental"],
+        "priceRange": "$$",
+        "medicalSpecialty": [
+          "Odontología General",
+          "Cirugía Oral",
+          "Implantología",
+          "Ortodoncia",
+          "Estética Dental",
+          "Endodoncia",
+          "Odontopediatría"
+        ],
+        "areaServed": {
+          "@type": "City",
+          "name": "Huelva",
+          "sameAs": "https://es.wikipedia.org/wiki/Huelva"
+        },
+        "employee": [
+          {
+            "@type": "Dentist",
+            "name": "Dra. Carmen Casado Conde",
+            "jobTitle": "Odontóloga y Cirujana Oral",
+            "description": "Especialista en odontología conservadora, familiar y comunitaria. Cirujana oral e implantóloga.",
+            "image": "https://res.cloudinary.com/dvjb4do4c/image/upload/v1754848803/carmen_qwyzs3.jpg",
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Universidad de Sevilla"
+            }
+          },
+          {
+            "@type": "Dentist",
+            "name": "Dra. Gema Casado Conde",
+            "jobTitle": "Odontóloga, Endodoncista y Estética Dental",
+            "description": "Experta en endodoncia y tratamientos estéticos avanzados.",
+            "image": "https://res.cloudinary.com/dvjb4do4c/image/upload/v1754848803/Gema_fjrfwz.jpg",
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Universidad de Sevilla"
+            }
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios dentales",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "MedicalProcedure",
+                "name": "Odontología General"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "MedicalProcedure",
+                "name": "Cirugía Oral"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "MedicalProcedure",
+                "name": "Implantología"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "MedicalProcedure",
+                "name": "Ortodoncia"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "MedicalProcedure",
+                "name": "Estética Dental"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "MedicalProcedure",
+                "name": "Endodoncia"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "MedicalProcedure",
+                "name": "Odontopediatría"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "MedicalProcedure",
+                "name": "Rehabilitación Oral"
+              }
+            }
+          ]
         }
-      ],
-      "sameAs": [
-        "https://www.instagram.com/casadocondedental"
-      ],
-      "priceRange": "$$",
-      "medicalSpecialty": [
-        "Odontología General",
-        "Cirugía Oral",
-        "Implantología",
-        "Ortodoncia",
-        "Estética Dental",
-        "Endodoncia",
-        "Odontopediatría"
-      ]
-    }
+      }
+    </script>
+
+    <!-- FAQ structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿La primera visita es gratuita?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, tu primera visita en la Clínica Dental Casado Conde es siempre gratuita y sin compromiso. Realizamos una evaluación personalizada de tu salud bucodental."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Dónde está la Clínica Dental Casado Conde?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Estamos ubicados en Paseo Independencia 41, 21002 Huelva, España."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuál es el horario de la clínica dental?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Atendemos de lunes a viernes en horario de 09:30 a 13:30 y de 16:00 a 20:00."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué tratamientos dentales ofrecen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ofrecemos un servicio integral que incluye odontología general, cirugía oral, implantología, ortodoncia, estética dental, endodoncia, odontopediatría y rehabilitación oral."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo puedo pedir cita?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Puedes contactarnos por WhatsApp o teléfono al 629 63 58 75, o por email a info@casadocondedental.es."
+            }
+          }
+        ]
+      }
+    </script>
+
+    <!-- BreadcrumbList structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://casadocondedental.es/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Equipo",
+            "item": "https://casadocondedental.es/#equipo"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Instalaciones",
+            "item": "https://casadocondedental.es/#instalaciones"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Contacto",
+            "item": "https://casadocondedental.es/#contact"
+          }
+        ]
+      }
     </script>
   </head>
   <body>
     <div class="min-h-screen">
       <nav
+        aria-label="Navegación principal"
         class="fixed top-0 z-50 w-full border-b border-gray-100 bg-white/90 shadow-sm backdrop-blur-md"
       >
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -246,270 +460,68 @@
           </div>
         </div>
       </nav>
-      <section class="flex min-h-screen items-center pt-20">
-        <div
-          class="absolute inset-0 z-0 h-screen overflow-hidden blur-sm md:block"
-        >
-          <video
-            class="h-full w-full object-cover"
-            src="https://res.cloudinary.com/dvjb4do4c/video/upload/v1754727783/WhatsApp_Video_2025-08-03_at_14.34.59_sgcgg9.mp4"
-            poster="https://res.cloudinary.com/dvjb4do4c/video/upload/so_0,c_scale,w_1280/v1754727783/WhatsApp_Video_2025-08-03_at_14.34.59_sgcgg9.jpg"
-            autoplay
-            loop
-            muted
-            playsinline
-          ></video>
-        </div>
-        <div
-          class="bg-card/60 z-10 mx-auto max-w-5xl rounded-2xl px-4 py-20 sm:px-6 lg:px-8"
-        >
-          <div class="grid grid-cols-1 items-center gap-16">
-            <div class="space-y-10">
-              <div class="space-y-6">
-                <h1
-                  class="text-5xl font-bold leading-tight text-slate-900 sm:text-6xl lg:text-1xl"
-                >
-                  Tu nueva sonrisa
-                  <span
-                    class="bg-gradient-to-r from-slate-700 to-slate-900 bg-clip-text text-transparent"
-                    >comienza aquí.</span
+      <main>
+        <section class="flex min-h-screen items-center pt-20">
+          <div
+            class="absolute inset-0 z-0 h-screen overflow-hidden blur-sm md:block"
+          >
+            <video
+              class="h-full w-full object-cover"
+              src="https://res.cloudinary.com/dvjb4do4c/video/upload/v1754727783/WhatsApp_Video_2025-08-03_at_14.34.59_sgcgg9.mp4"
+              poster="https://res.cloudinary.com/dvjb4do4c/video/upload/so_0,c_scale,w_1280/v1754727783/WhatsApp_Video_2025-08-03_at_14.34.59_sgcgg9.jpg"
+              autoplay
+              loop
+              muted
+              playsinline
+              aria-hidden="true"
+              title="Vídeo de presentación de la Clínica Dental Casado Conde"
+            ></video>
+          </div>
+          <div
+            class="bg-card/60 z-10 mx-auto max-w-5xl rounded-2xl px-4 py-20 sm:px-6 lg:px-8"
+          >
+            <div class="grid grid-cols-1 items-center gap-16">
+              <div class="space-y-10">
+                <div class="space-y-6">
+                  <h1
+                    class="text-5xl font-bold leading-tight text-slate-900 sm:text-6xl lg:text-1xl"
                   >
-                </h1>
+                    Tu nueva sonrisa
+                    <span
+                      class="bg-gradient-to-r from-slate-700 to-slate-900 bg-clip-text text-transparent"
+                      >comienza aquí.</span
+                    >
+                  </h1>
 
-                <p class="text-xl leading-relaxed text-slate-600">
-                  Ofrecemos un <strong>servicio integral</strong> en odontología
-                  general, cirugía e implantología, ortodoncia y mucho más.
-                  Queremos ser tu dentista de confianza en Huelva.
-                </p>
-                <p class="max text-xl leading-relaxed text-slate-600">
-                  Nuestro compromiso es brindar una atención cercana, honesta y
-                  personalizada, basada en la <strong>confianza</strong> con
-                  cada paciente. Cuidamos la salud bucodental de toda la familia
-                  en un entorno profesional, cómodo y seguro.
-                </p>
-              </div>
-              <div class="flex flex-col gap-6 sm:flex-row">
-                <a
-                  href="#equipo"
-                  class="text-nowrap transform rounded-md bg-gradient-to-r from-slate-800 to-slate-900 px-10 py-4 text-xl font-semibold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:from-slate-900 hover:to-black hover:shadow-2xl"
-                >
-                  Conoce más
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="equipo" class="py-24">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div class="mb-20 text-center">
-            <div
-              class="mb-6 inline-flex items-center rounded-full bg-slate-100 px-4 py-2 text-sm font-medium"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-users mr-2 h-4 w-4"
-              >
-                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
-                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                <circle cx="9" cy="7" r="4"></circle>
-              </svg>
-              Nuestro equipo
-            </div>
-            <h2 class="mb-6 text-4xl font-bold sm:text-5xl">
-              Profesionales de excelencia
-            </h2>
-            <p class="mx-auto max-w-3xl text-xl leading-relaxed">
-              Un equipo multidisciplinario de especialistas
-              <strong>comprometidas</strong> con brindar la más alta calidad en
-              atención odontológica
-            </p>
-          </div>
-          <div class="grid grid-cols-1 gap-10 md:grid-cols-2">
-            <div
-              class="bg-card group transform overflow-hidden rounded-2xl border shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
-            >
-              <div class="aspect-w-1 aspect-h-1">
-                <img
-                  src="https://res.cloudinary.com/dvjb4do4c/image/upload/v1754848803/carmen_qwyzs3.jpg"
-                  alt="Dra. Carmen Casado Conde - Odontóloga y Cirujana Oral en Huelva"
-                  width="592"
-                  height="320"
-                  class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div class="p-8">
-                <h3 class="mb-2 text-xl font-bold">Dra. Carmen Casado Conde</h3>
-                <p class="mb-3 font-semibold">
-                  Odontología General. Cirugía Oral
-                </p>
-                <p class="text-muted-foreground mb-4 leading-relaxed">
-                  Especialista en odontología conservadora, familiar y
-                  comunitaria. Cirujana oral e implantóloga.
-                </p>
-                <p class="text-muted-foreground text-sm italic">
-                  Grado en Odontología y Máster en Cirugía Bucal, Universidad de
-                  Sevilla.
-                </p>
-              </div>
-            </div>
-            <div
-              class="bg-card group transform overflow-hidden rounded-2xl border shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
-            >
-              <div class="aspect-w-1 aspect-h-1">
-                <img
-                  src="https://res.cloudinary.com/dvjb4do4c/image/upload/v1754848803/Gema_fjrfwz.jpg"
-                  alt="Dra. Gema Casado Conde - Especialista en Endodoncia y Estética Dental en Huelva"
-                  width="592"
-                  height="320"
-                  class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div class="p-8">
-                <h3 class="mb-2 text-xl font-bold">Dra. Gema Casado Conde</h3>
-                <p class="mb-3 font-semibold">
-                  Odontología General. Estética Dental. Endodoncia
-                </p>
-                <p class="text-muted-foreground mb-4 leading-relaxed">
-                  Experta en endodoncia y tratamientos estéticos avanzados.
-                </p>
-                <p class="text-muted-foreground text-sm italic">
-                  Licenciada en Odontología, Universidad de Sevilla. Experta en
-                  Endodoncia y Estética Dental.
-                </p>
+                  <p class="text-xl leading-relaxed text-slate-600">
+                    Ofrecemos un <strong>servicio integral</strong> en
+                    odontología general, cirugía e implantología, ortodoncia y
+                    mucho más. Queremos ser tu dentista de confianza en Huelva.
+                  </p>
+                  <p class="max text-xl leading-relaxed text-slate-600">
+                    Nuestro compromiso es brindar una atención cercana, honesta
+                    y personalizada, basada en la <strong>confianza</strong> con
+                    cada paciente. Cuidamos la salud bucodental de toda la
+                    familia en un entorno profesional, cómodo y seguro.
+                  </p>
+                </div>
+                <div class="flex flex-col gap-6 sm:flex-row">
+                  <a
+                    href="#equipo"
+                    class="text-nowrap transform rounded-md bg-gradient-to-r from-slate-800 to-slate-900 px-10 py-4 text-xl font-semibold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:from-slate-900 hover:to-black hover:shadow-2xl"
+                  >
+                    Conoce más
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="instalaciones" class="py-24 bg-slate-50">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div class="mb-20 text-center">
-            <div
-              class="mb-6 inline-flex items-center rounded-full bg-slate-100 px-4 py-2 text-sm font-medium"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-camera mr-2 h-4 w-4"
-              >
-                <path
-                  d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
-                ></path>
-                <circle cx="12" cy="13" r="3"></circle>
-              </svg>
-              Nuestras instalaciones
-            </div>
-            <h2 class="mb-6 text-4xl font-bold sm:text-5xl text-slate-900">
-              Espacios diseñados para tu comodidad
-            </h2>
-            <p class="mx-auto max-w-3xl text-xl leading-relaxed text-slate-600">
-              Descubre nuestras modernas instalaciones equipadas con la última
-              tecnología dental, diseñadas para ofrecerte la máxima
-              <strong>comodidad</strong> y tranquilidad durante tu visita
-            </p>
-          </div>
-          <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
-            <div
-              class="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl"
-            >
-              <img
-                src="https://res.cloudinary.com/dvjb4do4c/image/upload/c_scale,w_592/v1754731152/P1222138_ctrixw.jpg"
-                alt="Sala de espera de la Clínica Dental Casado Conde en Huelva"
-                width="592"
-                height="192"
-                loading="lazy"
-                class="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-            </div>
-            <div
-              class="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl"
-            >
-              <img
-                src="https://res.cloudinary.com/dvjb4do4c/image/upload/c_scale,w_592/v1754731151/P1222083_idaa2v.jpg"
-                alt="Despacho de dirección de la clínica dental en Huelva"
-                width="592"
-                height="192"
-                loading="lazy"
-                class="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-            </div>
-            <div
-              class="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl"
-            >
-              <img
-                src="https://res.cloudinary.com/dvjb4do4c/image/upload/c_scale,w_592/v1754731151/P1222154_fx5knp.jpg"
-                alt="Instalaciones modernas de la clínica dental Casado Conde"
-                width="592"
-                height="192"
-                loading="lazy"
-                class="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-            </div>
-            <div
-              class="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl"
-            >
-              <img
-                src="https://res.cloudinary.com/dvjb4do4c/image/upload/v1754849293/gabinete_occh7o.jpg"
-                alt="Gabinete dental equipado con tecnología avanzada"
-                width="592"
-                height="192"
-                loading="lazy"
-                class="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-            </div>
-            <div
-              class="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl"
-            >
-              <img
-                src="https://res.cloudinary.com/dvjb4do4c/image/upload/c_scale,w_592/v1754731150/P1222073_glxb3z.jpg"
-                alt="Equipo de rayos X dental de última generación"
-                width="592"
-                height="192"
-                loading="lazy"
-                class="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-            </div>
-            <div
-              class="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl"
-            >
-              <img
-                src="https://res.cloudinary.com/dvjb4do4c/image/upload/c_scale,w_592/v1754732647/P1211574_lsdrk4.jpg"
-                alt="Equipo profesional de la Clínica Dental Casado Conde"
-                width="592"
-                height="192"
-                loading="lazy"
-                class="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
-        id="contact"
-        class="bg-gradient-to-br from-slate-800 via-slate-900 to-black py-24 text-white"
-      >
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div class="grid grid-cols-1 gap-16 lg:grid-cols-2">
-            <div>
+        </section>
+        <section id="equipo" class="py-24">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="mb-20 text-center">
               <div
-                class="mb-8 inline-flex items-center rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-slate-200"
+                class="mb-6 inline-flex items-center rounded-full bg-slate-100 px-4 py-2 text-sm font-medium"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -521,191 +533,404 @@
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  class="lucide lucide-phone mr-2 h-4 w-4"
+                  class="lucide lucide-users mr-2 h-4 w-4"
+                >
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                </svg>
+                Nuestro equipo
+              </div>
+              <h2 class="mb-6 text-4xl font-bold sm:text-5xl">
+                Profesionales de excelencia
+              </h2>
+              <p class="mx-auto max-w-3xl text-xl leading-relaxed">
+                Un equipo multidisciplinario de especialistas
+                <strong>comprometidas</strong> con brindar la más alta calidad
+                en atención odontológica
+              </p>
+            </div>
+            <div class="grid grid-cols-1 gap-10 md:grid-cols-2">
+              <div
+                class="bg-card group transform overflow-hidden rounded-2xl border shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
+              >
+                <div class="aspect-w-1 aspect-h-1">
+                  <img
+                    src="https://res.cloudinary.com/dvjb4do4c/image/upload/v1754848803/carmen_qwyzs3.jpg"
+                    alt="Dra. Carmen Casado Conde - Odontóloga y Cirujana Oral en Huelva"
+                    width="592"
+                    height="320"
+                    class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div class="p-8">
+                  <h3 class="mb-2 text-xl font-bold">
+                    Dra. Carmen Casado Conde
+                  </h3>
+                  <p class="mb-3 font-semibold">
+                    Odontología General. Cirugía Oral
+                  </p>
+                  <p class="text-muted-foreground mb-4 leading-relaxed">
+                    Especialista en odontología conservadora, familiar y
+                    comunitaria. Cirujana oral e implantóloga.
+                  </p>
+                  <p class="text-muted-foreground text-sm italic">
+                    Grado en Odontología y Máster en Cirugía Bucal, Universidad
+                    de Sevilla.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-card group transform overflow-hidden rounded-2xl border shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
+              >
+                <div class="aspect-w-1 aspect-h-1">
+                  <img
+                    src="https://res.cloudinary.com/dvjb4do4c/image/upload/v1754848803/Gema_fjrfwz.jpg"
+                    alt="Dra. Gema Casado Conde - Especialista en Endodoncia y Estética Dental en Huelva"
+                    width="592"
+                    height="320"
+                    class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div class="p-8">
+                  <h3 class="mb-2 text-xl font-bold">Dra. Gema Casado Conde</h3>
+                  <p class="mb-3 font-semibold">
+                    Odontología General. Estética Dental. Endodoncia
+                  </p>
+                  <p class="text-muted-foreground mb-4 leading-relaxed">
+                    Experta en endodoncia y tratamientos estéticos avanzados.
+                  </p>
+                  <p class="text-muted-foreground text-sm italic">
+                    Licenciada en Odontología, Universidad de Sevilla. Experta
+                    en Endodoncia y Estética Dental.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="instalaciones" class="py-24 bg-slate-50">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="mb-20 text-center">
+              <div
+                class="mb-6 inline-flex items-center rounded-full bg-slate-100 px-4 py-2 text-sm font-medium"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-camera mr-2 h-4 w-4"
                 >
                   <path
-                    d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
+                    d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
                   ></path>
+                  <circle cx="12" cy="13" r="3"></circle>
                 </svg>
-                Contacto
+                Nuestras instalaciones
               </div>
-              <h2 class="mb-8 text-4xl font-bold sm:text-5xl">
-                Agenda Tu Consulta
+              <h2 class="mb-6 text-4xl font-bold sm:text-5xl text-slate-900">
+                Espacios diseñados para tu comodidad
               </h2>
-              <p class="mb-2 text-xl leading-relaxed text-slate-300">
-                Estamos aquí para cuidar de tu sonrisa con la excelencia que
-                mereces. Contáctanos para una evaluación personalizada.
+              <p
+                class="mx-auto max-w-3xl text-xl leading-relaxed text-slate-600"
+              >
+                Descubre nuestras modernas instalaciones equipadas con la última
+                tecnología dental, diseñadas para ofrecerte la máxima
+                <strong>comodidad</strong> y tranquilidad durante tu visita
               </p>
-              <p class="mb-12 text-xl leading-relaxed text-slate-300">
-                Tu primera visita siempre será <b>gratuita y sin compromiso</b>.
-              </p>
-              <div class="space-y-8">
-                <a
-                  href="https://maps.google.com/?q=Paseo+Independencia+41,+21002+Huelva,+España"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="flex cursor-pointer items-start rounded p-1 transition-colors hover:bg-white/10 hover:text-white"
-                >
-                  <div
-                    class="mr-6 mt-1 flex h-12 w-12 items-center justify-center rounded-xl bg-white/10"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-map-pin h-6 w-6 text-slate-300"
-                    >
-                      <path
-                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
-                      ></path>
-                      <circle cx="12" cy="10" r="3"></circle>
-                    </svg>
-                  </div>
-                  <div>
-                    <p class="mb-2 text-lg font-semibold text-white">
-                      Ubicación
-                    </p>
-                    <p class="text-slate-300">
-                      Paseo Independencia 41, 21002 Huelva ↗
-                    </p>
-                  </div>
-                </a>
-                <a
-                  href="tel:+34629635875"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="flex cursor-pointer items-start rounded p-1 transition-colors hover:bg-white/10 hover:text-white"
-                >
-                  <div
-                    class="mr-6 mt-1 flex h-12 w-12 items-center justify-center rounded-xl bg-white/10"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-phone h-6 w-6 text-slate-300"
-                    >
-                      <path
-                        d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
-                      ></path>
-                    </svg>
-                  </div>
-                  <div>
-                    <p class="mb-2 text-lg font-semibold text-white">
-                      Teléfono
-                    </p>
-                    <p class="text-slate-300">629 63 58 75</p>
-                  </div>
-                </a>
-                <a
-                  href="https://wa.me/629635875"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="flex cursor-pointer items-start rounded p-1 transition-colors hover:bg-white/10 hover:text-white"
-                >
-                  <div
-                    class="mr-6 mt-1 flex h-12 w-12 items-center justify-center rounded-xl bg-white/10"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-message-circle-icon lucide-message-circle"
-                    >
-                      <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p class="mb-2 text-lg font-semibold text-white">
-                      WhatsApp
-                    </p>
-                    <p class="text-slate-300">629 63 58 75 ↗</p>
-                  </div>
-                </a>
-                <a
-                  href="mailto:info@casadocondedental.es"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="flex cursor-pointer items-start rounded p-1 transition-colors hover:bg-white/10 hover:text-white"
-                >
-                  <div
-                    class="mr-6 mt-1 flex h-12 w-12 items-center justify-center rounded-xl bg-white/10"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-mail h-6 w-6 text-slate-300"
-                    >
-                      <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                      <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                    </svg>
-                  </div>
-                  <div>
-                    <p class="mb-2 text-lg font-semibold text-white">Email</p>
-                    <p class="text-slate-300">info@casadocondedental.es ↗</p>
-                  </div>
-                </a>
+            </div>
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+              <div
+                class="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl"
+              >
+                <img
+                  src="https://res.cloudinary.com/dvjb4do4c/image/upload/c_scale,w_592/v1754731152/P1222138_ctrixw.jpg"
+                  alt="Sala de espera de la Clínica Dental Casado Conde en Huelva"
+                  width="592"
+                  height="192"
+                  loading="lazy"
+                  class="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div
+                class="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl"
+              >
+                <img
+                  src="https://res.cloudinary.com/dvjb4do4c/image/upload/c_scale,w_592/v1754731151/P1222083_idaa2v.jpg"
+                  alt="Despacho de dirección de la clínica dental en Huelva"
+                  width="592"
+                  height="192"
+                  loading="lazy"
+                  class="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div
+                class="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl"
+              >
+                <img
+                  src="https://res.cloudinary.com/dvjb4do4c/image/upload/c_scale,w_592/v1754731151/P1222154_fx5knp.jpg"
+                  alt="Instalaciones modernas de la clínica dental Casado Conde"
+                  width="592"
+                  height="192"
+                  loading="lazy"
+                  class="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div
+                class="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl"
+              >
+                <img
+                  src="https://res.cloudinary.com/dvjb4do4c/image/upload/v1754849293/gabinete_occh7o.jpg"
+                  alt="Gabinete dental equipado con tecnología avanzada"
+                  width="592"
+                  height="192"
+                  loading="lazy"
+                  class="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div
+                class="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl"
+              >
+                <img
+                  src="https://res.cloudinary.com/dvjb4do4c/image/upload/c_scale,w_592/v1754731150/P1222073_glxb3z.jpg"
+                  alt="Equipo de rayos X dental de última generación"
+                  width="592"
+                  height="192"
+                  loading="lazy"
+                  class="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div
+                class="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl"
+              >
+                <img
+                  src="https://res.cloudinary.com/dvjb4do4c/image/upload/c_scale,w_592/v1754732647/P1211574_lsdrk4.jpg"
+                  alt="Equipo profesional de la Clínica Dental Casado Conde"
+                  width="592"
+                  height="192"
+                  loading="lazy"
+                  class="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="contact"
+          class="bg-gradient-to-br from-slate-800 via-slate-900 to-black py-24 text-white"
+        >
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 gap-16 lg:grid-cols-2">
+              <div>
                 <div
-                  class="flex items-start rounded p-1 transition-colors hover:bg-white/10 hover:text-white"
+                  class="mb-8 inline-flex items-center rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-slate-200"
                 >
-                  <div
-                    class="mr-6 mt-1 flex h-12 w-12 items-center justify-center rounded-xl bg-white/10"
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-phone mr-2 h-4 w-4"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-clock h-6 w-6 text-slate-300"
+                    <path
+                      d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
+                    ></path>
+                  </svg>
+                  Contacto
+                </div>
+                <h2 class="mb-8 text-4xl font-bold sm:text-5xl">
+                  Agenda Tu Consulta
+                </h2>
+                <p class="mb-2 text-xl leading-relaxed text-slate-300">
+                  Estamos aquí para cuidar de tu sonrisa con la excelencia que
+                  mereces. Contáctanos para una evaluación personalizada.
+                </p>
+                <p class="mb-12 text-xl leading-relaxed text-slate-300">
+                  Tu primera visita siempre será
+                  <b>gratuita y sin compromiso</b>.
+                </p>
+                <div class="space-y-8">
+                  <a
+                    href="https://maps.google.com/?q=Paseo+Independencia+41,+21002+Huelva,+España"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex cursor-pointer items-start rounded p-1 transition-colors hover:bg-white/10 hover:text-white"
+                  >
+                    <div
+                      class="mr-6 mt-1 flex h-12 w-12 items-center justify-center rounded-xl bg-white/10"
                     >
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <polyline points="12 6 12 12 16 14"></polyline>
-                    </svg>
-                  </div>
-                  <div>
-                    <p class="mb-2 text-lg font-semibold text-white">
-                      Horarios
-                    </p>
-                    <div class="space-y-1 text-slate-300">
-                      <p>Lunes a Viernes: 09:30 a 13:30 y 16:00 a 20:00</p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-map-pin h-6 w-6 text-slate-300"
+                      >
+                        <path
+                          d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                        ></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="mb-2 text-lg font-semibold text-white">
+                        Ubicación
+                      </p>
+                      <p class="text-slate-300">
+                        Paseo Independencia 41, 21002 Huelva ↗
+                      </p>
+                    </div>
+                  </a>
+                  <a
+                    href="tel:+34629635875"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex cursor-pointer items-start rounded p-1 transition-colors hover:bg-white/10 hover:text-white"
+                  >
+                    <div
+                      class="mr-6 mt-1 flex h-12 w-12 items-center justify-center rounded-xl bg-white/10"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-phone h-6 w-6 text-slate-300"
+                      >
+                        <path
+                          d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="mb-2 text-lg font-semibold text-white">
+                        Teléfono
+                      </p>
+                      <p class="text-slate-300">629 63 58 75</p>
+                    </div>
+                  </a>
+                  <a
+                    href="https://wa.me/629635875"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex cursor-pointer items-start rounded p-1 transition-colors hover:bg-white/10 hover:text-white"
+                  >
+                    <div
+                      class="mr-6 mt-1 flex h-12 w-12 items-center justify-center rounded-xl bg-white/10"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-message-circle-icon lucide-message-circle"
+                      >
+                        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="mb-2 text-lg font-semibold text-white">
+                        WhatsApp
+                      </p>
+                      <p class="text-slate-300">629 63 58 75 ↗</p>
+                    </div>
+                  </a>
+                  <a
+                    href="mailto:info@casadocondedental.es"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex cursor-pointer items-start rounded p-1 transition-colors hover:bg-white/10 hover:text-white"
+                  >
+                    <div
+                      class="mr-6 mt-1 flex h-12 w-12 items-center justify-center rounded-xl bg-white/10"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-mail h-6 w-6 text-slate-300"
+                      >
+                        <path
+                          d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+                        ></path>
+                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="mb-2 text-lg font-semibold text-white">Email</p>
+                      <p class="text-slate-300">info@casadocondedental.es ↗</p>
+                    </div>
+                  </a>
+                  <div
+                    class="flex items-start rounded p-1 transition-colors hover:bg-white/10 hover:text-white"
+                  >
+                    <div
+                      class="mr-6 mt-1 flex h-12 w-12 items-center justify-center rounded-xl bg-white/10"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-clock h-6 w-6 text-slate-300"
+                      >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="mb-2 text-lg font-semibold text-white">
+                        Horarios
+                      </p>
+                      <div class="space-y-1 text-slate-300">
+                        <p>Lunes a Viernes: 09:30 a 13:30 y 16:00 a 20:00</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
       <footer class="bg-black py-16 text-white">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
